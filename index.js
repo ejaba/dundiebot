@@ -173,4 +173,4 @@ bot.on('ready', () => {
 	bot.user.setGame(gamelol[Math.floor(Math.random() * gamelol.length)] + " | d!");
   });
 
-bot.login(TOKEN);
+bot.login(process.env.BOT_TOKEN);
