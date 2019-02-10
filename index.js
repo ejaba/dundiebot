@@ -45,6 +45,24 @@ var creedquote = [
 	"The Taliban's the worst. Great heroin though. -Creed Bratton"
 ];
 
+var gif = [
+	"https://i.imgur.com/2lnC5yi.gif",
+	"https://media.giphy.com/media/9PdfJQgHt2AgM/giphy.gif",
+	"https://media.giphy.com/media/l3bwrFzIUMEM0/giphy.gif",
+	"https://media.giphy.com/media/12LxZlbPbAV5PW/giphy.gif",
+	"https://media.giphy.com/media/QBSzVwyQRphpC/giphy.gif",
+	"https://media.giphy.com/media/26gsp7XjMlbpgOxwI/giphy.gif",
+	"https://media.giphy.com/media/agd5h8tLLOx32/giphy.gif",
+	"https://media.giphy.com/media/87eGvMYGJsI2A/giphy.gif",
+	"https://media.giphy.com/media/fsqJLKTGxlJmg/giphy.gif",
+	"https://media1.giphy.com/media/elPYgmQ506HK0/giphy.gif",
+	"https://media.giphy.com/media/goEWraNuCucVi/giphy.gif",
+	"https://media.giphy.com/media/h7No5m3tAeV4Q/giphy.gif",
+	"https://media.giphy.com/media/5tSSgmS7sd8Vq/giphy.gif",
+	"https://media.giphy.com/media/oyIpShY494JVe/giphy.gif",
+	"https://media.giphy.com/media/3cRckyeMg6whi/giphy.gif"
+];
+
 var dwightgif = [
 	"https://i.imgur.com/2lnC5yi.gif",
 	"https://media.giphy.com/media/9PdfJQgHt2AgM/giphy.gif"
@@ -128,6 +146,14 @@ bot.on('message', message => {
 	if (message.content === 'd!gif michael') {
 		message.channel.send(message.channel.send(" ",{
 			file: mikegif[Math.floor(Math.random() * mikegif.length)]
+		}))
+	}
+})
+
+bot.on('message', message => {
+	if (message.content === 'd!gif') {
+		message.channel.send(message.channel.send(" ",{
+			file: gif[Math.floor(Math.random() * gif.length)]
 		}))
 	}
 })
